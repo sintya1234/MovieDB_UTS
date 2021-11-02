@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_menu"
+    app:startDestination="@id/nowPlayingFragment">
+
+    <fragment
+        android:id="@+id/nowPlayingFragment"
+        android:name="com.example.moviedb.view.fragments.NowPlayingFragment"
+        android:label="fragment_now_playing"
+        tools:layout="@layout/fragment_now_playing" >
+        <action
+            android:id="@+id/action_nowPlayingFragment_to_movieDetailFragment_bisa"
+            app:destination="@id/movieDetailFragment_bisa" />
+    </fragment>
+    <fragment
+        android:id="@+id/upComingFragment"
+        android:name="com.example.moviedb.view.fragments.upComingFragment"
+        android:label="fragment_up_coming"
+        tools:layout="@layout/fragment_up_coming" >
+        <action
+            android:id="@+id/action_upComingFragment_to_movieDetailFragment_bisa"
+            app:destination="@id/movieDetailFragment_bisa" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.example.moviedb.view.fragments.movieDetailFragment"
+        android:label="fragment_movie_detail"
+        tools:layout="@layout/fragment_movie_detail" />
+    <fragment
+        android:id="@+id/movieDetailFragment_bisa"
+        android:name="com.example.moviedb.view.fragments.movieDetailFragment_bisa"
+        android:label="fragment_movie_detail_bisa"
+        tools:layout="@layout/fragment_movie_detail_bisa" />
+</navigation>
